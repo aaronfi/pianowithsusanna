@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Susanna Valleau</title>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/susannavalleau.css">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico" />
+        
+        <script src="jquery-3.1.1/jquery-3.1.1.min.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
+        <script src="semantic/dist/components/sticky.min.js"></script>
+        <script src="semantic/dist/components/dropdown.min.js"></script>
+        
+        
+        <script language='javascript'>
+            $(document).ready(function(){
+                $('.ui.dropdown').dropdown({on:'hover'});
+             });
+        </script>
+        
+        <!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	</head>
+
+	<body>
+
+		<div class = "ui main container">
+            <center>	
+                <img  class="phone only" src="./resources/img/logo.png" id="logo">
+                <!---<h2>SUSANNA VALLEAU PIANO STUDIO</h2>-->
+            </center>	
+        </div>
+
+    
+    
+        <div class="ui main container" id="menusticky">
+        
+            
+             <!--- Menu !-->
+                <div class="ui sticky secondary five item green pointing menu" id="thin" style="background-color:white;">
+                    <a class="active item">Home</a>
+                    
+                    <div class="ui dropdown item"  onclick="location.href='lessons.html'" id="secondary">
+                        Lessons
+                        <i class="caret down icon"></i>
+                        
+                        <div class="menu">
+                          <a href="lessons.html" class="item">Piano Lessons</a>
+                          <a href="schedule.html" class="item">Schedule & Rates</a>
+                          <a href="practicetips.html" class="item">Practice Tips</a>
+                          <a href="faqs.html" class="item">FAQs</a>
+                          <a href="testimonials.html" class="item">Testimonials</a>
+                          <a href="organ.html" class="item">Organ Lessons</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <a href="accompaniment.html" class="item" id="secondary">Accompaniment</a>
+                    <a href="about.html" class="item" id="secondary">About Susanna</a>
+                    <a href="contact.html" class="item" id="secondary">Contact</a>
+                </div>
+                
+            <!--- BODY !-->
+            
+            <div class="ui lined container" id="rightalign">
+
+            <div class="ui grid">
+                
+                <div class="six wide column" style="min-height: 400px;">
+                    <br>
+                    <img class="ui image" src="./resources/img/Susanna Piano.jpg" style="width:100%;"></img>
+                </div>
+                <div class="ten wide column">
+                    <div style="padding-left:10px;">
+                        <br>
+                        <h2 style="padding-bottom:0px; margin-bottom: 0px"> Learning and Loving the Piano</h2>
+                        <h3>Lessons for Children and Adults</h3>
+                        
+                        <br>
+
+                        <p>We believe in structured teaching infused with fun. Learning to play the piano requires commitment, but it should never be tedious. With the right teacher, anyone can learn to play — and look forward to each lesson.</p>
+                        <p><a href="">Learn more</a> about Susanna Valleau Piano Studio, or <a href="contact.html">contact her</a> for a free introductory lesson.</p>
+                        
+                    </div>
+                    <br><br><br><br>
+
+                    <div class="ui grid" style="margin-right:0; padding-top:3px; margin-bottom:0px;">
+                            <div class="seven wide column ui segment"  id="whitebox">
+                            <i>
+                            <center style="font-size:16;">
+                            Susanna has high expectations and focuses on technique; yet she never loses sight of my child's individual needs and personality.
+                            </center>
+                            </i>
+                            <br>
+                           
+                            <center style="font-size:14;">— Christi, Parent</center>
+                            </div>
+                            
+                            <div class="one wide column"></div>
+                            
+                            <div class="eight wide column segment"  id="box">
+
+                            <h4> Upcoming Concerts</h4> <br>
+                            <p>For Susanna’s performance schedule and recordings of past concerts, visit her <a href="http://susannavalleau.com">performance web site</a>.</p>
+
+                            </div>
+                            
+                    </div>
+
+                </div>
+            </div>
+            
+            
+            
+            </div>
+
+        </div>
+        
+        <div  class="ui main container" id="footer">
+
+                <center>
+                    © 2017 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Email: SusannaValleau@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phone: 206.486.2801
+                </center>
+                
+                <br><br>
+		</div>
+        
+	</body>
+</html>

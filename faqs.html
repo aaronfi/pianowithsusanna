@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Susanna Valleau</title>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/susannavalleau.css">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico" />
+        
+        <script src="jquery-3.1.1/jquery-3.1.1.min.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
+        <script src="semantic/dist/components/sticky.min.js"></script>
+        <script src="semantic/dist/components/dropdown.min.js"></script>
+        
+        <script language='javascript'>
+             $(document).ready(function(){
+                $('.ui.sticky').sticky({context: '#menusticky'});
+             });
+        </script>
+        
+        <script language='javascript'>
+            $(document).ready(function(){
+                $('.ui.dropdown').dropdown({on:'hover'});
+             });
+        </script>
+        
+        <!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	</head>
+
+	<body>
+
+        <div class = "ui main container">
+            <center>	
+                <img  class="phone only" src="./resources/img/logo.png" id="logo">
+                <!---<h2>SUSANNA VALLEAU PIANO STUDIO</h2>-->
+            </center>	
+        </div>
+
+    
+    
+        <div class="ui main container" id="menusticky">
+        
+            
+             <!--- Menu !-->
+                <div class="ui sticky secondary five item green pointing menu" id="thin" style="background-color:white;">
+                    <a href="index.html" class="item" id="secondary">Home</a>
+                    
+                    <div class="ui dropdown item" style="border-bottom-width:2px; border-bottom-color:417a60;" onclick="location.href='lessons.html'" id="secondary">
+                        <b style="color:417a60; ">Lessons</b>
+                        <i class="caret down icon"></i>
+                        
+                        <div class="menu">
+                          <a href="lessons.html" class="item">Piano Lessons</a>
+                          <a href="schedule.html" class="item">Schedule & Rates</a>
+                          <a href="practicetips.html" class="item">Practice Tips</a>
+                          <a href="" class="item"><b>FAQs</b></a>
+                          <a href="testimonials.html" class="item">Testimonials</a>
+                          <a href="organ.html" class="item">Organ Lessons</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <a href="accompaniment.html" class="item" id="secondary">Accompaniment</a>
+                    <a href="about.html" class="item" id="secondary">About Susanna</a>
+                    <a href="contact.html" class="item" id="secondary">Contact</a>
+                </div>
+                
+            <!--- BODY !-->
+            
+            <div class="ui lined container" id="leftalign">       
+                <br>
+                <h2 style="padding-bottom:0px; margin-bottom: 0px">Frequently Asked Questions</h2>
+                
+                <br>
+
+                <h4>Where is the studio located?</h4>
+                <p>In Susanna Valleau’s home in the Roosevelt neighborhood of Seattle, just south of Roosevelt High School.</p>
+                
+                <h4>How do I get started?</h4>
+                <p>Contact us to arrange for a free trial lesson for you or your child. It’s a great opportunity for us to meet each other, work together, and decide if we're a good fit. Please call 206.486.2801 or email <a href="mailto:susanna.valleau@gmail.com.">susanna.valleau@gmail.com</a>.</p>
+                
+               <h4>What if I have to miss a lesson?</h4>
+               <p>Students who cancel their lesson at least 24 hours in advance are put on a waiting list for a make-up lesson. Make-ups are scheduled in the order that cancellations occur. Unfortunately, we can’t offer make-up lessons with less than 24 hours notice.</p>
+                
+               <h4>What’s the time commitment for practicing?</h4>
+               <p>For most students — adult and older children alike — practice sessions should run the length of their lesson time: 30 minutes if the lessons are 30 minutes, 45 minutes for 45-minute lessons; shorter sessions are better for younger children For additional guidelines, see <a href="practicetips.html">Practice Tips</a>.</p> 
+               
+               <br>
+
+            </div>
+
+        </div>
+        
+        <div  class="ui main container" id="footer">
+
+                <center>
+                    © 2017 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Email: SusannaValleau@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phone: 206.486.2801
+                </center>
+                
+                <br><br>
+		</div>
+        
+	</body>
+</html>

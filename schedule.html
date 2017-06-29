@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Susanna Valleau</title>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/susannavalleau.css">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico" />
+        
+        <script src="jquery-3.1.1/jquery-3.1.1.min.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
+        <script src="semantic/dist/components/sticky.min.js"></script>
+        <script src="semantic/dist/components/dropdown.min.js"></script>
+        
+        <script language='javascript'>
+             $(document).ready(function(){
+                $('.ui.sticky').sticky({context: '#menusticky'});
+             });
+        </script>
+        
+        <script language='javascript'>
+            $(document).ready(function(){
+                $('.ui.dropdown').dropdown({on:'hover'});
+             });
+        </script>
+        
+        <!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	</head>
+
+	<body>
+
+        <div class = "ui main container">
+            <center>	
+                <img  class="phone only" src="./resources/img/logo.png" id="logo">
+                <!---<h2>SUSANNA VALLEAU PIANO STUDIO</h2>-->
+            </center>	
+        </div>
+
+    
+    
+        <div class="ui main container" id="menusticky">
+        
+            
+             <!--- Menu !-->
+                <div class="ui sticky secondary five item green pointing menu" id="thin" style="background-color:white;">
+                    <a href="index.html" class="item" id="secondary">Home</a>
+                    
+                    <div class="ui dropdown item" style="border-bottom-width:2px; border-bottom-color:417a60;" onclick="location.href='lessons.html'" id="secondary">
+                        <b style="color:417a60; ">Lessons</b>
+                        <i class="caret down icon"></i>
+                        
+                        <div class="menu">
+                          <a href="lessons.html" class="item">Piano Lessons</a>
+                          <a href="" class="item"><b>Schedule & Rates</b></a>
+                          <a href="practicetips.html" class="item">Practice Tips</a>
+                          <a href="faqs.html" class="item">FAQs</a>
+                          <a href="testimonials.html" class="item">Testimonials</a>
+                          <a href="organ.html" class="item">Organ Lessons</a>
+                        </div>
+                        
+                    </div>
+                    
+                    <a href="accompaniment.html" class="item" id="secondary">Accompaniment</a>
+                    <a href="about.html" class="item" id="secondary">About Susanna</a>
+                    <a href="contact.html" class="item" id="secondary">Contact</a>
+                </div>
+                
+            <!--- BODY !-->
+            
+            <div class="ui lined container" id="leftalign">       
+                
+                <br>            
+                <img src="./resources/img/Hannah_Point.jpeg" style="width:35%; float: right;margin-left:20px;"></img>
+                
+                <h2 style="padding-bottom:0px; margin-bottom: 0px">Schedule and Rates</h2>
+                
+                <br>
+
+                <p>Susanna offers lessons year-round, including summer.</p>
+            <h4>Holidays</h4> <p>During the school year, there are no lessons during major Seattle public school breaks, unless other arrangements have been made. There are, however, lessons on individual holidays, such as Martin Luther King Day, Presidents' Day, Columbus Day, and so on. We hand out a detailed holiday schedule at the beginning of each school year. </p>
+            <h4>Summer Schedule</h4> <p>We encourage students to take a minimum of five lessons over the summer to guarantee a spot on our fall roster. The schedule is flexible to accommodate summer vacations and other commitments.</p>
+            <h4>Rates</h4>
+            <p>Per-lesson rates vary depending on the length of the lesson. Payment for each month’s lessons is due at the beginning of the month. Please <a href="contact.html">contact Susanna Valleau</a> to discuss the cost of lessons for you or a child.</p>
+            <h4>Cancellation Policy</h4>
+            <p>Students who cancel their lesson at least 24 hours in advance are put on a waiting list for a make-up lesson. Make-ups are scheduled in the order that cancellations come in.</p>
+
+               <br>
+
+            </div>
+
+        </div>
+        
+        <div  class="ui main container" id="footer">
+
+                <center>
+                    © 2017 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Email: SusannaValleau@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phone: 206.486.2801
+                </center>
+                
+                <br><br>
+		</div>
+        
+	</body>
+</html>
