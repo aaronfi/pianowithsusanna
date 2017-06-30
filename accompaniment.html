@@ -1,12 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Susanna Valleau - Accompaniment</title>
-		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" />
-        <link rel="stylesheet" type="text/css" href="resources/css/susannavalleau.css" />
-        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico" />
+		<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" href="resources/css/susannavalleau.css">
+        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico">
         
-        <script>
+        <script type="application/javascript">
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -20,16 +21,16 @@
 	<body>
 		<div class="ui main container">
             <center>	
-                <img class="phone only" src="./resources/img/logo.png" id="logo" />
+                <img class="phone only" src="./resources/img/logo.png" id="logo" alt="logo">
             </center>	
         </div>
 
         <div class="ui main container" id="menusticky">
             <!-- Menu !-->
             <div class="ui sticky secondary five item green pointing menu" id="thin" style="background-color:white;">
-                <a href="index.html" class="item" id="secondary">Home</a>
+                <a href="index.html" class="item">Home</a>
                 
-                <div class="ui dropdown item" onclick="location.href='lessons.html'" id="secondary">
+                <div class="ui dropdown item" onclick="location.href='lessons.html'">
                     <b>Lessons</b>
                     <i class="caret down icon"></i>
                     
@@ -45,17 +46,17 @@
                 </div>
                 
                 <a class="active item">Accompaniment</a>
-                <a href="about.html" class="item" id="secondary">About Susanna</a>
-                <a href="contact.html" class="item" id="secondary">Contact</a>
+                <a href="about.html" class="item">About Susanna</a>
+                <a href="contact.html" class="item">Contact</a>
             </div>
                 
             <!-- BODY !-->
-            <div class="ui lined container" id="rightalign">
+            <div class="ui lined container rightalign">
             
             <div class="ui grid">
                 <div class="six wide column" style="min-height: 400px;">
                     <br>
-                    <img class="ui image" src="./resources/img/Accompaniment.JPG" style="width:100%;"></img>
+                    <img class="ui image" src="./resources/img/Accompaniment.JPG" style="width:100%;" alt="Accompaniment">
                 </div>
                 <div class="ten wide column">
                     <div>
@@ -75,11 +76,10 @@
             </div>
             
              <div class="ui grid" style="margin-right:0; padding-top:3px; margin-bottom:0px;margin-bottom:0px;">
-                        <div class="ten wide column ui segment" id="whitebox" style="font-size:17;" >
+                        <div class="ten wide column ui segment" id="whitebox" style="font-size:17;text-align:center;" >
                             <i>
-                            <center>
                             Susanna has been my accompanist over the past three years. She is very professional and prepared for every practice session and performance. 
-                            She also does a great job at listening and asking insightful questions as we work through each piece.   </center>
+                            She also does a great job at listening and asking insightful questions as we work through each piece.
                             </i>
                             <br>
                             <center style="font-size:16;">— Owen, violinist</center>
@@ -87,7 +87,7 @@
                         
                         <div class="one wide column"></div>
                         
-                        <div class="five wide column segment"  id="box">
+                        <div class="five wide column segment" id="box">
                         <h4> Upcoming Concerts</h4> <br>
                         <p>For Susanna’s performance schedule and recordings of past concerts, visit her <a href="http://susannavalleau.com">performance web site</a>.</p>
                         </div>
@@ -105,21 +105,16 @@
             <br><br>
 		</div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="semantic/dist/semantic.min.js"></script>
-        <script src="semantic/dist/components/sticky.min.js"></script>
-        <script src="semantic/dist/components/dropdown.min.js"></script>
-
-        <script language='javascript'>
-             $(document).ready(function(){
-                $('.ui.sticky').sticky({context: '#menusticky'});
-             });
-        </script>
-        
-        <script language='javascript'>
+        <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="application/javascript" src="semantic/dist/semantic.min.js"></script>
+        <script type="application/javascript" src="semantic/dist/components/sticky.min.js"></script>
+        <script type="application/javascript" src="semantic/dist/components/dropdown.min.js"></script>
+                
+        <script type="application/javascript">
             $(document).ready(function(){
+                $('.ui.sticky').sticky({context: '#menusticky'});
                 $('.ui.dropdown').dropdown({on:'hover'});
              });
-        </script>        
+        </script>
 	</body>
 </html>
