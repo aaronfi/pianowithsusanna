@@ -1,0 +1,2 @@
+# BROWER CACHING - 1 year for fonts
+Header set Cache-Control "max-age=31536000, public"
