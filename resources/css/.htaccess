@@ -1,2 +1,0 @@
-# BROWER CACHING - 1 Day for css
-Header set Cache-Control "max-age=86400, public"

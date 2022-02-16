@@ -1,2 +1,0 @@
-# BROWER CACHING - 60 Days for images
-Header set Cache-Control "max-age=5184000, public"

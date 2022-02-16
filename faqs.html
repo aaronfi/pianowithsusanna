@@ -1,9 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+        <!--- REQUIRED FOR MOBILE --->
+        <meta name=viewport content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Susanna Valleau - FAQs</title>
-		<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" integrity="sha512-Aan4rx0Wnv+lJLIkhhV7ycEWV4RCqAYl/rCcT6eh5ssld53HDKlbxKXyPs2eOhFWL2aR85F1hH0oW2OC+geXUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="resources/css/susannavalleau.css">
         <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico">
 
@@ -27,11 +29,34 @@
     
         <div class="ui main container" id="menusticky">
             <!-- Menu !-->
-            <div class="ui sticky secondary five item green pointing menu" id="thin" style="background-color:white;">
+            <div class="ui sticky stackable secondary five item green pointing menu mobile hidden grid" id="thin" style="background-color:white;">
                 <a href="index.html" class="item">Home</a>
                 
-                <div class="ui dropdown item" style="border-bottom-width:2px; border-bottom-color:417a60;" onclick="location.href='lessons.html'">
-                    <b style="color:417a60; ">Lessons</b>
+                <div class="ui dropdown item" style="border-bottom-width:2px; border-bottom-color: #417a60;" onclick="location.href='lessons.html'">
+                    <b style="color: #417a60; ">Lessons</b>
+                    <i class="caret down icon"></i>
+                    
+                    <div class="menu">
+                        <a href="lessons.html" class="item">Piano Lessons</a>
+                        <a href="schedule.html" class="item">Schedule &amp; Rates</a>
+                        <a href="practicetips.html" class="item">Practice Tips</a>
+                        <a href="" class="item"><b>FAQs</b></a>
+                        <a href="testimonials.html" class="item">Testimonials</a>
+                        <a href="organ.html" class="item">Organ Lessons</a>
+                    </div>
+                    
+                </div>
+                
+                <a href="accompaniment.html" class="item">Accompaniment</a>
+                <a href="about.html" class="item">About Susanna</a>
+                <a href="contact.html" class="item">Contact</a>
+            </div>
+            
+            <div class="ui stackable secondary five item green menu mobile only grid" id="thin" style="background-color:white;">
+                <a href="index.html" class="item">Home</a>
+                
+                <div class="ui dropdown item" style="border-bottom-width:2px; border-bottom-color: #417a60; background-color: #f2f2f2" onclick="location.href='lessons.html'">
+                    <b style="color: #417a60; ">Lessons</b>
                     <i class="caret down icon"></i>
                     
                     <div class="menu">
@@ -58,7 +83,7 @@
                 <br>
 
                 <h4>Where is the studio located?</h4>
-                <p>In Susanna Valleau’s home in the Roosevelt neighborhood of Seattle, just south of Roosevelt High School.</p>
+                <p>In Susanna Valleau’s home in the Beacon Hill neighborhood of Seattle.</p>
                 
                 <h4>How do I get started?</h4>
                 <p>Contact us to arrange for a free trial lesson for you or your child. It’s a great opportunity for us to meet each other, work together, and decide if we're a good fit. Please call 206.486.2801 or email <a href="mailto:susanna.valleau@gmail.com.">susanna.valleau@gmail.com</a>.</p>
@@ -74,18 +99,29 @@
         </div>
         
         <div class="ui main container" id="footer">
-            <center>
-                © 2017 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Email: &nbsp;<a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Phone: &nbsp;206.486.2801
-            </center>
+           
+        <center>
+            <div class="ui one column grid">
+                <div class="mobile hidden column"> 
+                    © 2022 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Email: &nbsp;<a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phone: &nbsp;206.486.2801
+                </div>
+                <div class="mobile only column">
+                    © 2022 Susanna Valleau <br>
+                    Email: &nbsp;<a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    Phone: &nbsp;206.486.2801
+                </div>
+
             <br><br>
-		</div>
+            </div>
+        </center>
+        </div>
 
         <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script type="application/javascript" src="semantic/dist/semantic.min.js"></script>
-        <script type="application/javascript" src="semantic/dist/components/sticky.min.js"></script>
-        <script type="application/javascript" src="semantic/dist/components/dropdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js" integrity="sha512-idTE8nn9mF7rh+sChjr7tyR7v1ePcqlAtCbhg/H4vrMXAI9TH1BO0nUIfrV58Y3mTkVhriXGT6rlT81HECa4RA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sticky.min.js" integrity="sha512-tZEhVeDC0KWGkjhEaLtNTJwPv48+DmEoFsSMSSD8RR0iej0TpAq2slWzD/1NyMFKtXbTWi1mRPAcDbQw+uAlkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dropdown.min.js" integrity="sha512-JSaizwqAG94jcYWHryknSmveRJsRzZ8kaANzlNsZWYslP5YNdSXpqf0lYUMe/nF/Sjl9H23ltEvmJcqpQu0diQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                 
         <script type="application/javascript">
             $(document).ready(function(){

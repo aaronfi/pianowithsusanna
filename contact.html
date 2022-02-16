@@ -1,9 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+    
+        <!--- REQUIRED FOR MOBILE --->
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Susanna Valleau - Contact</title>
-		<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" integrity="sha512-Aan4rx0Wnv+lJLIkhhV7ycEWV4RCqAYl/rCcT6eh5ssld53HDKlbxKXyPs2eOhFWL2aR85F1hH0oW2OC+geXUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="resources/css/susannavalleau.css">
         <link rel="shortcut icon" type="image/x-icon" href="resources/img/favico.ico">
 
@@ -27,15 +31,15 @@
     
         <div class="ui main container" id="menusticky">
             <!-- Menu !-->
-            <div class="ui sticky secondary five item green pointing menu" id="thin" style="background-color:white;">
+            <div class="ui sticky stackable secondary five item green pointing menu mobile hidden grid" id="thin" style="background-color:white;">
                 <a href="index.html" class="item">Home</a>
                 
-                <div class="ui dropdown item" onclick="location.href='lessons.html'">
-                    <b>Lessons</b>
+                <div class="ui dropdown item"  onclick="location.href='lessons.html'">
+                    Lessons
                     <i class="caret down icon"></i>
                     
                     <div class="menu">
-                        <a href="" class="item">Piano Lessons</a>
+                        <a href="lessons.html" class="item">Piano Lessons</a>
                         <a href="schedule.html" class="item">Schedule &amp; Rates</a>
                         <a href="practicetips.html" class="item">Practice Tips</a>
                         <a href="faqs.html" class="item">FAQs</a>
@@ -47,21 +51,45 @@
                 
                 <a href="accompaniment.html" class="item">Accompaniment</a>
                 <a href="about.html" class="item">About Susanna</a>
-                <a href="contact.html" class="active item">Contact</a>
+                <a class="active item">Contact</a>
+            </div>
+            
+            <div class="ui stackable secondary five item green menu mobile only grid" id="thin" style="background-color:white;">
+                <a href="index.html" class="item">Home</a>
+                
+                <div class="ui dropdown item"  onclick="location.href='lessons.html'">
+                    Lessons
+                    <i class="caret down icon"></i>
+                    
+                    <div class="menu">
+                        <a href="lessons.html" class="item">Piano Lessons</a>
+                        <a href="schedule.html" class="item">Schedule &amp; Rates</a>
+                        <a href="practicetips.html" class="item">Practice Tips</a>
+                        <a href="faqs.html" class="item">FAQs</a>
+                        <a href="testimonials.html" class="item">Testimonials</a>
+                        <a href="organ.html" class="item">Organ Lessons</a>
+                    </div>
+                    
+                </div>
+                
+                <a href="accompaniment.html" class="item">Accompaniment</a>
+                <a href="about.html" class="item">About Susanna</a>
+                <a class="active item">Contact</a>
             </div>
                 
             <!-- BODY !-->
             <div class="ui lined container leftalign">
-                 <div class="ui grid">
+                 <div class="ui stackable grid">
                     <div class="eight wide column" style="min-height: 400px;">
                         <br>
                         <h2 style="padding-bottom:0px; margin-bottom: 0px">Contact Susanna</h2>                    
                         <br>
 
-                        <p>Susanna Valleau teaches piano out of her home in the Roosevelt area of Seattle. She welcomes questions, so feel free to contact her to discuss lessons for you or a child, or to set up a free introductory lesson. </p>
+                        <p>Susanna Valleau teaches piano out of her home in the Beacon Hill neighborhood of Seattle. She welcomes questions, so feel free to contact her to discuss lessons for you or a child, or to set up a free introductory lesson. </p>
                         
                         <b>Email: &nbsp;</b> <a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a><br>
-                        <b>Phone: &nbsp;</b> 206.486.2801                                         
+                        <b>Phone: &nbsp;</b> 206.486.2801          <br>
+                        <b>Address: &nbsp;</b> <a href="https://maps.google.com/?q=5416+21st+Ave+S,+Seattle,+WA+98108&entry=gmail&source=g">5416 21st Ave S, Seattle, WA 98108</a>
                         <br><br><br><br><br>
                     </div>
                    
@@ -70,22 +98,17 @@
                         <div id="map"></div>
                         <script type="application/javascript">
                         function initMap() {
-                            var susanna = {lat: 47.674601, lng: -122.313470};
+                            var susanna = {lat: 47.553643, lng: -122.305962};
                             var map = new google.maps.Map(document.getElementById('map'), {
                             zoom: 13,
                             center: susanna
                             });
                             
-                            var susannaCircle = new google.maps.Circle({
-                                strokeColor: '#FF0000',
-                                strokeOpacity: 0.8,
-                                strokeWeight: 2,
-                                fillColor: '#FF0000',
-                                fillOpacity: 0.35,
-                                map: map,
-                                center: susanna,
-                                radius: Math.sqrt(25) * 100
-                            });
+                          var marker = new google.maps.Marker({
+                              position: susanna,
+                              map: map,
+                              title: '5416 21st Ave S, Seattle, WA 98108'
+                          });
                         }
                         </script>
                         <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdXUDcdrxVlll8rU-7OMkUsmEbOZxG6ZU&amp;callback=initMap"></script>
@@ -95,18 +118,28 @@
         </div>
         
         <div class="ui main container" id="footer">
-            <center>
-                © 2017 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Email: &nbsp;<a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Phone: &nbsp;206.486.2801
-            </center>
+        <center>
+            <div class="ui one column grid">
+                <div class="mobile hidden column"> 
+                    © 2022 Susanna Valleau &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Email: &nbsp;<a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phone: &nbsp;206.486.2801
+                </div>
+                <div class="mobile only column">
+                    © 2022 Susanna Valleau <br>
+                    Email: &nbsp;<a href="mailto:susanna.valleau+website@gmail.com">susanna.valleau@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    Phone: &nbsp;206.486.2801
+                </div>
+
             <br><br>
-		</div>
+            </div>
+        </center>
+        </div>
 
         <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script type="application/javascript" src="semantic/dist/semantic.min.js"></script>
-        <script type="application/javascript" src="semantic/dist/components/sticky.min.js"></script>
-        <script type="application/javascript" src="semantic/dist/components/dropdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js" integrity="sha512-idTE8nn9mF7rh+sChjr7tyR7v1ePcqlAtCbhg/H4vrMXAI9TH1BO0nUIfrV58Y3mTkVhriXGT6rlT81HECa4RA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/sticky.min.js" integrity="sha512-tZEhVeDC0KWGkjhEaLtNTJwPv48+DmEoFsSMSSD8RR0iej0TpAq2slWzD/1NyMFKtXbTWi1mRPAcDbQw+uAlkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/dropdown.min.js" integrity="sha512-JSaizwqAG94jcYWHryknSmveRJsRzZ8kaANzlNsZWYslP5YNdSXpqf0lYUMe/nF/Sjl9H23ltEvmJcqpQu0diQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                 
         <script type="application/javascript">
             $(document).ready(function(){

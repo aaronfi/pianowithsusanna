@@ -1,2 +1,0 @@
-# BROWER CACHING - 90 Days for all Semantic .css, .js, etc
-Header set Cache-Control "max-age=7776000, public"
